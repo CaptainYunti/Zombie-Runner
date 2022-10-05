@@ -1578,6 +1578,7 @@ Transform:
   - {fileID: 3098424294093088508}
   - {fileID: 5112404501070882133}
   - {fileID: 1819182166490083349}
+  - {fileID: 1648486584961826437}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2267,3 +2268,103 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &5875106553180161533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2200366452744491371}
+    m_Modifications:
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.44353938
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.44353938
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.44353938
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.096
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.408
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835334013781737762, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash VFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835334013781737762, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6371596180ee2cc43ba19b6ecf06f87f, type: 3}
+--- !u!4 &1648486584961826437 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5875106553180161533}
+  m_PrefabAsset: {fileID: 0}
