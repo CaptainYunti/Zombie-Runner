@@ -5,18 +5,21 @@ using UnityEngine;
 public class EnemyAttack : MonoBehaviour
 {
 
-    [SerializeField] Transform target;
-    [SerializeField] float damage = 10f;
+    PlayerHealth target;
+    [SerializeField] float maxDamage = 100f;
+
 
     void Start()
     {
-        
+        target = FindObjectOfType<PlayerHealth>();
     }
 
     public void AttackHitEvent()
     {
+        float damage = Mathf.Floor(maxDamage * Random.value);
         if (target == null) return;
         Debug.Log("Suck it!");
+        target.TakeDamage(damage);
     }
 
 }
