@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 5069037483330027034}
   - component: {fileID: 5053557653383841352}
   - component: {fileID: 5045042861799586312}
+  - component: {fileID: 2643300643506903485}
   m_Layer: 0
   m_Name: Soviet Gun
   m_TagString: Untagged
@@ -160,6 +161,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2643300643506903485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5067672063216614496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9359b28fbc639414eb99c70fbf713ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 100
+  damage: 20
+  muzzleFlash: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+    type: 3}
+  hitEffect: {fileID: 3379337768668819753, guid: 80cf37889ba711d44b3e938629701246,
+    type: 3}
+  ammoSlot: {fileID: 0}
 --- !u!1 &5067725080718156758
 GameObject:
   m_ObjectHideFlags: 0

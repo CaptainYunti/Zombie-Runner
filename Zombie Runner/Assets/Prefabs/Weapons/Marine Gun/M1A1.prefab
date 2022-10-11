@@ -1552,6 +1552,7 @@ GameObject:
   - component: {fileID: 2200366452744491371}
   - component: {fileID: 7638372314775380190}
   - component: {fileID: 2255590155118714593}
+  - component: {fileID: 979427735}
   m_Layer: 0
   m_Name: M1A1
   m_TagString: Untagged
@@ -1566,9 +1567,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7164976947240053345}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.9568558, y: -0.71543103, z: -1.1433568}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 6123574566214569463}
   - {fileID: 4160165895015872135}
@@ -1629,7 +1630,7 @@ LODGroup:
     - renderer: {fileID: 3932171076791127260}
     - renderer: {fileID: 8315822018019032250}
     - renderer: {fileID: 6770755235636336117}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!95 &2255590155118714593
 Animator:
   serializedVersion: 3
@@ -1638,7 +1639,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7164976947240053345}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b91fae2c97e3c4a4c8009feb1bb3b8c2, type: 2}
   m_CullingMode: 0
@@ -1649,6 +1650,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &979427735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7164976947240053345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9359b28fbc639414eb99c70fbf713ad7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPCamera: {fileID: 0}
+  range: 100
+  damage: 20
+  muzzleFlash: {fileID: 3329570969764458582}
+  hitEffect: {fileID: 3379337768668819753, guid: 80cf37889ba711d44b3e938629701246,
+    type: 3}
+  ammoSlot: {fileID: 0}
 --- !u!1 &7167661995854086460
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,32 +2303,32 @@ PrefabInstance:
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.44353938
+      value: 0.127952
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.44353938
+      value: 0.127952
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.44353938
+      value: 0.127952
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.002
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.096
+      value: 0.114
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.408
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
@@ -2348,7 +2368,7 @@ PrefabInstance:
     - target: {fileID: 8835334013781737762, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
       propertyPath: m_Name
-      value: Muzzle Flash VFX
+      value: Muzzle Flash VFX 2
       objectReference: {fileID: 0}
     - target: {fileID: 8835334013781737762, guid: 6371596180ee2cc43ba19b6ecf06f87f,
         type: 3}
@@ -2360,11 +2380,22 @@ PrefabInstance:
       propertyPath: lengthInSec
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.0001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6371596180ee2cc43ba19b6ecf06f87f, type: 3}
 --- !u!4 &1648486584961826437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+    type: 3}
+  m_PrefabInstance: {fileID: 5875106553180161533}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &3329570969764458582 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
     type: 3}
   m_PrefabInstance: {fileID: 5875106553180161533}
   m_PrefabAsset: {fileID: 0}

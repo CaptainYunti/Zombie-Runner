@@ -3356,6 +3356,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Over Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1193655239222216336, guid: 1439469bf21225849a990f01682d41cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1193655239222216431, guid: 1439469bf21225849a990f01682d41cd,
         type: 3}
       propertyPath: m_Pivot.x
