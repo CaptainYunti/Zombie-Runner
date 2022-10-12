@@ -880,6 +880,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3038058766106884710, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun
+      objectReference: {fileID: 0}
     - target: {fileID: 3086220743517686044, guid: 849cdb2f9c2d77848adef69f8dbba907,
         type: 3}
       propertyPath: m_RootOrder
@@ -939,6 +944,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[0].AmmoType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[1].AmmoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[2].AmmoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmount
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3427945454884110486, guid: 849cdb2f9c2d77848adef69f8dbba907,
+        type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmount
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8592868023019081675, guid: 849cdb2f9c2d77848adef69f8dbba907,
         type: 3}

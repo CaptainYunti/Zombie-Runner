@@ -15,6 +15,11 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToogle = false;
 
+    private void OnDisable()
+    {
+        ZoomOut();
+    }
+
 
     private void Update()
     {
@@ -22,20 +27,30 @@ public class WeaponZoom : MonoBehaviour
         {
             if (zoomedInToogle == false)
             {
-                zoomedInToogle = true;
-                fpsCamera.fieldOfView = zoomedInFOV;
-                fpsController.mouseLook.XSensitivity = zoomInSensitivity;
-                fpsController.mouseLook.YSensitivity = zoomInSensitivity;
+                ZoomIn();
             }
 
             else
             {
-                zoomedInToogle = false;
-                fpsCamera.fieldOfView = zoomedOutFOV;
-                fpsController.mouseLook.XSensitivity = zoomOutSensitivity;
-                fpsController.mouseLook.YSensitivity = zoomOutSensitivity;
+                ZoomOut();
 
             }
         }
+    }
+
+    private void ZoomOut()
+    {
+        zoomedInToogle = false;
+        fpsCamera.fieldOfView = zoomedOutFOV;
+        fpsController.mouseLook.XSensitivity = zoomOutSensitivity;
+        fpsController.mouseLook.YSensitivity = zoomOutSensitivity;
+    }
+
+    private void ZoomIn()
+    {
+        zoomedInToogle = true;
+        fpsCamera.fieldOfView = zoomedInFOV;
+        fpsController.mouseLook.XSensitivity = zoomInSensitivity;
+        fpsController.mouseLook.YSensitivity = zoomInSensitivity;
     }
 }

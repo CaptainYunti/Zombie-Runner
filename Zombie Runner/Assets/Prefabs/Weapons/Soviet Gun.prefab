@@ -112,6 +112,7 @@ Transform:
   m_Children:
   - {fileID: 5068857596590315734}
   - {fileID: 5064203979179536990}
+  - {fileID: 2431580740141161097}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -177,11 +178,11 @@ MonoBehaviour:
   FPCamera: {fileID: 0}
   range: 100
   damage: 20
-  muzzleFlash: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
-    type: 3}
+  muzzleFlash: {fileID: 1831609606190503002}
   hitEffect: {fileID: 3379337768668819753, guid: 80cf37889ba711d44b3e938629701246,
     type: 3}
   ammoSlot: {fileID: 0}
+  ammoType: 1
   timeBetweenShots: 1
 --- !u!114 &2186129940526171431
 MonoBehaviour:
@@ -280,3 +281,99 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1001 &7410319505889518065
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5069037483330027034}
+    m_Modifications:
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.1492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835334013781737762, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+        type: 3}
+      propertyPath: m_Name
+      value: Muzzle Flash VFX 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6371596180ee2cc43ba19b6ecf06f87f, type: 3}
+--- !u!4 &2431580740141161097 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5145375325734763384, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7410319505889518065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1831609606190503002 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9204673122372744619, guid: 6371596180ee2cc43ba19b6ecf06f87f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7410319505889518065}
+  m_PrefabAsset: {fileID: 0}
