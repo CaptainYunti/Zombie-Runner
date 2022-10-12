@@ -48,7 +48,6 @@ GameObject:
   - component: {fileID: 75358266}
   - component: {fileID: 1200867722117219670}
   - component: {fileID: 8592868023019081675}
-  - component: {fileID: 7503971304881867387}
   - component: {fileID: 3427945454884110486}
   m_Layer: 0
   m_Name: Player
@@ -209,23 +208,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &7503971304881867387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3086220743518180664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d24c532a6e461841aabc68650fca9ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fpsCamera: {fileID: 3086220743517198110}
-  zoomedOutFOV: 60
-  zoomedInFOV: 20
-  zoomOutSensitivity: 2
-  zoomInSensitivity: 0.5
 --- !u!114 &3427945454884110486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +396,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8239640994776547687}
     m_Modifications:
+    - target: {fileID: 2186129940526171431, guid: 9dbee353d8b639444b7bbd1ea44b259d,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 3086220743517198110}
+    - target: {fileID: 2186129940526171431, guid: 9dbee353d8b639444b7bbd1ea44b259d,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 3086220743512137946}
+    - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
+        type: 3}
+      propertyPath: range
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
+        type: 3}
+      propertyPath: damage
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
         type: 3}
       propertyPath: FPCamera
@@ -424,6 +426,11 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 3427945454884110486}
+    - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5067672063216614496, guid: 9dbee353d8b639444b7bbd1ea44b259d,
         type: 3}
       propertyPath: m_Name
@@ -520,6 +527,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 8239640994776547687}
     m_Modifications:
     - target: {fileID: 979427735, guid: 1a7b148d09238c546982a628a8d45959, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 979427735, guid: 1a7b148d09238c546982a628a8d45959, type: 3}
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 3086220743517198110}
@@ -527,6 +538,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 3427945454884110486}
+    - target: {fileID: 979427735, guid: 1a7b148d09238c546982a628a8d45959, type: 3}
+      propertyPath: timeBetweenShots
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2200366452744491371, guid: 1a7b148d09238c546982a628a8d45959,
         type: 3}
       propertyPath: m_RootOrder
@@ -582,6 +597,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6824472729774378990, guid: 1a7b148d09238c546982a628a8d45959,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 3086220743517198110}
+    - target: {fileID: 6824472729774378990, guid: 1a7b148d09238c546982a628a8d45959,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 3086220743512137946}
     - target: {fileID: 7164976947240053345, guid: 1a7b148d09238c546982a628a8d45959,
         type: 3}
       propertyPath: m_Name
@@ -609,6 +634,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 392195325440227938, guid: 287302af86a3ca7408c4f5203473e434,
         type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 392195325440227938, guid: 287302af86a3ca7408c4f5203473e434,
+        type: 3}
+      propertyPath: damage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 392195325440227938, guid: 287302af86a3ca7408c4f5203473e434,
+        type: 3}
       propertyPath: FPCamera
       value: 
       objectReference: {fileID: 3086220743517198110}
@@ -617,6 +652,21 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 3427945454884110486}
+    - target: {fileID: 392195325440227938, guid: 287302af86a3ca7408c4f5203473e434,
+        type: 3}
+      propertyPath: timeBetweenShots
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3831235553907364685, guid: 287302af86a3ca7408c4f5203473e434,
+        type: 3}
+      propertyPath: fpsCamera
+      value: 
+      objectReference: {fileID: 3086220743517198110}
+    - target: {fileID: 3831235553907364685, guid: 287302af86a3ca7408c4f5203473e434,
+        type: 3}
+      propertyPath: fpsController
+      value: 
+      objectReference: {fileID: 3086220743512137946}
     - target: {fileID: 8470118922547937221, guid: 287302af86a3ca7408c4f5203473e434,
         type: 3}
       propertyPath: m_RootOrder
