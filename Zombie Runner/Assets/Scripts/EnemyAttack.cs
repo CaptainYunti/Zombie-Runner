@@ -16,7 +16,8 @@ public class EnemyAttack : MonoBehaviour
 
     public void AttackHitEvent()
     {
-        float damage = Mathf.Floor(maxDamage * Random.value);
+        //float damage = Mathf.Floor(maxDamage * Random.value);
+        float damage = Mathf.Floor(maxDamage / 2);
         if (target == null) return;
         Debug.Log("Suck it!");
         target.TakeDamage(damage);

@@ -563,7 +563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You're pregnant
+  m_text: YOU DEAD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b7e7b895f9ec4a04e9c277e80179eec1, type: 2}
   m_sharedMaterial: {fileID: -8063894630032151027, guid: b7e7b895f9ec4a04e9c277e80179eec1,

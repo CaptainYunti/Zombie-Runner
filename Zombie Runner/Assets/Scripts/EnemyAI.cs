@@ -14,16 +14,27 @@ public class EnemyAI : MonoBehaviour
     Animator animator;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
+    EnemyHealth health;
 
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        health = GetComponent<EnemyHealth>();
     }
 
     void Update()
     {
-        ChasingPlayer();
+        if(health.IsDead())
+        {
+            this.enabled = false;
+            navMeshAgent.enabled = false;
+        }
+        else
+        {
+            ChasingPlayer();
+        }
+
 
     }
 
