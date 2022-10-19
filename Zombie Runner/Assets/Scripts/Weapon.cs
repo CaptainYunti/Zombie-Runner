@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -13,33 +14,42 @@ public class Weapon : MonoBehaviour
     [SerializeField] Ammo ammoSlot;
     [SerializeField] AmmoType ammoType;
     [SerializeField] float timeBetweenShots = 1f;
+    [SerializeField] Transform gameManager;
+    [SerializeField] TextMeshProUGUI ammoText;
 
     bool canShoot = true;
+    WeaponTimeController timeController;
 
-    private void OnEnable()
+    private void Awake()
     {
-        canShoot = true;
+        timeController = gameManager.GetComponent<WeaponTimeController>();
     }
 
 
     void Update()
     {
+        DisplayAmmo();
+        canShoot = timeController.CanShoot(this);
         if (Input.GetMouseButtonDown(0) && canShoot)
         {
-            StartCoroutine(Shoot());
+            Shoot();
         }
     }
 
-    IEnumerator Shoot()
+    private void DisplayAmmo()
+    {
+        int currentAmmo = ammoSlot.GetCurrentAmmo(ammoType);
+        ammoText.text = currentAmmo.ToString();
+    }
+
+    void Shoot()
     {
         if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
-            canShoot = false;
+            timeController.StartShoot(this, timeBetweenShots);
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo(ammoType);
-            yield return new WaitForSeconds(timeBetweenShots);
-            canShoot = true;
         }
 
 
