@@ -435,7 +435,7 @@ PrefabInstance:
     - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
         type: 3}
       propertyPath: damage
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2643300643506903485, guid: 9dbee353d8b639444b7bbd1ea44b259d,
         type: 3}
@@ -549,7 +549,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 979427735, guid: 1a7b148d09238c546982a628a8d45959, type: 3}
       propertyPath: damage
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 979427735, guid: 1a7b148d09238c546982a628a8d45959, type: 3}
       propertyPath: FPCamera
@@ -653,6 +653,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3086220743517686046}
     m_Modifications:
+    - target: {fileID: 720131356709029962, guid: 219b7f0969d942d4fa63b1fe0a6b1d1a,
+        type: 3}
+      propertyPath: angleDecay
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 720131356709029962, guid: 219b7f0969d942d4fa63b1fe0a6b1d1a,
+        type: 3}
+      propertyPath: lightDecay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 720131356709029962, guid: 219b7f0969d942d4fa63b1fe0a6b1d1a,
+        type: 3}
+      propertyPath: minimumAngle
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2893846860980829689, guid: 219b7f0969d942d4fa63b1fe0a6b1d1a,
         type: 3}
       propertyPath: m_RootOrder

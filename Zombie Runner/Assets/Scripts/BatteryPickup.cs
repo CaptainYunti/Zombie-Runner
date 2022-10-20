@@ -5,7 +5,7 @@ using UnityEngine;
 public class BatteryPickup : MonoBehaviour
 {
 
-    [SerializeField] float lightAngleToRestore = 80f;
+    [SerializeField] float lightAngleToRestore = 120f;
     [SerializeField] float lightIntensityToRestore = 1f;
 
     GameObject player;

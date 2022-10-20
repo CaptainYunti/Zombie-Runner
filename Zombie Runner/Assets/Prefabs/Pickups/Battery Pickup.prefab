@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec10390cec6b29144a91806a7e857f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightAngleToRestore: 80
+  lightAngleToRestore: 120
   lightIntensityToRestore: 1
 --- !u!1001 &3528355885016009314
 PrefabInstance:
